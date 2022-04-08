@@ -2,9 +2,8 @@ import React from 'react';
 import { useSelector } from "react-redux";
 
 const TodoList = () => {
-	const todos = useSelector((state)=>{
-		return state.tasks;
-	});
+	const todos = useSelector(({tasks}) => tasks);
+	
 
 	return (
 		<ul className="tasks-list">
