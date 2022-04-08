@@ -1,5 +1,4 @@
 body{
-    background-color: #edf5d1;
     padding: 0px;
     margin: 0px;
     color: rgba(0,0,0,0.87);
@@ -11,10 +10,10 @@ body{
     background-color: white;
     height: auto;
     min-height: 100vh;
-    width : 40%;
+    /* width : 40%; */
     margin: auto;
     padding : 30px;
-    box-shadow: 2px 2px 20px #ececec;
+    /* box-shadow: 2px 2px 20px #ececec; */
 }
 
 .app-title{

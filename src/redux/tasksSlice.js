@@ -5,14 +5,12 @@ export const tasksSlice = createSlice({
     initialState:[],
     reducers:{
         addTask: (state, action)=>{
+            const id = Math.round((new Date()).getTime() / 1000)
             const newTask = {
-                id: new Date(),
-                name: action.payload.task
+                id,
+                title: action.payload.task
             }
             state.push(newTask);
-        },
-        deleteTask: (state, action)=>{
-            return state.filter((item) => item.id !== action.payload.id);
         }
     }
 });

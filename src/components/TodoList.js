@@ -1,5 +1,4 @@
 import React from 'react';
-import TodoItem from './TodoItem';
 import { useSelector } from "react-redux";
 
 const TodoList = () => {
@@ -9,8 +8,12 @@ const TodoList = () => {
 
 	return (
 		<ul className="tasks-list">
-			{todos.map((todo) => (
-				<TodoItem id={todo.id} title={todo.name} completed={todo.status} />
+			{todos && todos.map((todo) => (
+				<li className="task-item">
+					<div>
+						{todo.title}
+					</div>
+				</li>
 			))}
 		</ul>
 	);
